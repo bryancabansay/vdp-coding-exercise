@@ -10,7 +10,7 @@ A VIN is a unique 17-character code that is used to identify individual motor ve
 
 To extract the model year from a VIN, you will need to look at the 10th character of the VIN, unless the manufacturer is BMW (WMI code "WBA") or Ford Australia (WMI code "6FP" or "WF0"). For BMW and Ford Australia vehicles, the model year is encoded in the 11th character of the VIN. The WMI Code is the first 3 characters of the VIN.
 
-However, the character can represent different years depending on the manufacturing country and the manufacturer. For example, a "D" in the 10th position might represent 1983 for a Ford vehicle, but it might represent 2013 for a Kia vehicle.
+However, the character can represent different years depending on the manufacturing country and the manufacturer. For example, a "D" in the 10th position might represent 1983 for a Ford vehicle, but it might represent 2013 for a Kia vehicle. For this exercise it is sufficient to extract each possible year for the corresponding year value.
 
 To calculate the year represented by the 10th or 11th character, you will need to use a lookup table that maps each possible character to the corresponding year (See reference table at the bottom of this page). You can then use this lookup table to extract the model year from the VIN.
 
